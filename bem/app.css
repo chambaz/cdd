@@ -1,0 +1,58 @@
+body {
+  display: flex;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 10px 40px 0 rgba(25, 38, 45, 0.2);
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 320px;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__heading {
+  margin: 0 0 20px;
+}
+
+.card__body {
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.card__button {
+  background: #3498db;
+  border: solid 2px #3498db;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card__button:hover {
+  background: #fff;
+  color: #3498db;
+}
+
+.card--highlight {
+  background: #3498db;
+  color: #fff;
+}
+
+.card--highlight .card__button {
+  background: #fff;
+  color: #3498db;
+}
+
+.card--highlight .card__button:hover {
+  background: #3498db;
+  border-color: #fff;
+  color: #fff;
+}

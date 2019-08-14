@@ -1,0 +1,21 @@
+{
+  "name": "twig-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "twig": "twig-cli ./*.twig --base ./ --output public/",
+    "css": "postcss -u postcss-cssnext postcss-import -o public/app.css app.css",
+    "build": "npm run twig && npm run css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "twig-cli-tmpl": "^1.0.1"
+  }
+}
